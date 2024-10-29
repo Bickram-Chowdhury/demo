@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranajit Dutta - Tax Consultant</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS -->
+    <script>
+        // JavaScript for animating the quality and skills list
+        document.addEventListener('DOMContentLoaded', function() {
+            const skills = document.querySelectorAll('.skills-list li');
+            skills.forEach((skill, index) => {
+                setTimeout(() => {
+                    skill.style.opacity = 1; // Make it visible
+                    skill.style.transform = 'translateY(0)'; // Move into place
+                }, index * 500); // Delay for each skill
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Datta And Associates</h1>
+        <h2> Ranajit Datta & Samrat Mondal</h2>
+        <h3>Email: call2ranajitdatta@gmail.com // Ph- 9874342494 // 7980500857 </h3>
+        <nav>
+            <a href="#about">About Us</a>
+            <a href="#services">Services</a>
+            <a href="#quality-skills">Quality & Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Us</h2>
+            <p>With 10 years of experience as a tax consultant, I’ve become highly skilled in helping individuals, businesses, and organizations manage their tax obligations efficiently. Over the past decade, I’ve gained extensive knowledge of tax laws, regulations, and best practices, which enables me to provide accurate advice and strategic planning. My focus is on minimizing tax liabilities while ensuring compliance with all legal requirements, offering clients peace of mind and optimized financial outcomes.. My goal is to provide comprehensive tax solutions that save you time and money.</p>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services">
+            <h2>Services</h2>
+            <ul>
+                <li>Income Tax Preparation and Return Filing</li>
+                <li>Company formations</li>
+                <li>Gst return and Complains</li>
+                <li>Tax Planning and Strategy</li>
+                <li>Audit Representation</li>
+                <li>Business Tax Consultation</li>
+            </ul>
+        </section>
+
+        <!-- Quality & Skills Section -->
+        <section id="quality-skills">
+            <h2>Quality & Skills</h2>
+            <ul class="skills-list">
+                <li>Attention to Detail</li>
+                <li>Strong Analytical Skills</li>
+                <li>Up-to-Date Knowledge of Tax Laws</li>
+                <li>Excellent Communication</li>
+                <li>Client-Focused Approach</li>
+            </ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>If you have any questions or would like to get in touch, feel free to reach out to me:</p>
+            <p>Email: <a href="mailto:call2ranajitdatta@gmail.com" style="color: #2980b9;">call2ranajitdatta@gmail.com</a></p>
+            <p>Phone: <a href="tel:+917001576532" style="color: #2980b9;">9874342494</a></p>
+            
+            <form action="https://formspree.io/f/{your-form-id}" method="POST">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <input type="hidden" name="_replyto" value="call2ranajitdatta@gmail.com"> <!-- Ensure replies go to this email -->
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Ranajit Dutta. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
